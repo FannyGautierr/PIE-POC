@@ -1,0 +1,364 @@
+{
+  "artists": [
+    {
+      "id": 1,
+      "name": "Alex Beats",
+      "genre": "Rap",
+      "upvotes": 4598,
+      "downvotes": 254,
+      "image": "https://randomuser.me/api/portraits/men/75.jpg",
+      "bio": "Alex Beats is an emerging artist known for his unique style that blends classic hip-hop with modern trap elements. With a growing fanbase and several viral tracks, he's quickly gaining recognition in the underground rap scene.",
+      "tracks": [
+        { "id": 101, "title": "Urban Flow", "duration": "3:24", "plays": 845000 },
+        { "id": 102, "title": "Midnight Rhymes", "duration": "2:56", "plays": 623000 },
+        { "id": 103, "title": "Street Poetry", "duration": "4:12", "plays": 912000 },
+        { "id": 104, "title": "Beat of the City", "duration": "3:45", "plays": 578000 }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Lyrical Storm",
+      "genre": "Rap",
+      "upvotes": 6743,
+      "downvotes": 387,
+      "image": "https://randomuser.me/api/portraits/men/76.jpg",
+      "bio": "Lyrical Storm brings a fresh perspective to rap with thought-provoking lyrics and innovative beats. Known for storytelling that connects with listeners on a personal level, this artist is redefining what it means to be authentic in today's music scene.",
+      "tracks": [
+        { "id": 201, "title": "Word Play", "duration": "3:18", "plays": 1245000 },
+        { "id": 202, "title": "Verbal Assault", "duration": "4:02", "plays": 987000 },
+        { "id": 203, "title": "Mind Games", "duration": "3:45", "plays": 1563000 },
+        { "id": 204, "title": "Poetic Justice", "duration": "3:21", "plays": 756000 }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Mike Rhymes",
+      "genre": "Rap",
+      "upvotes": 8912,
+      "downvotes": 645,
+      "image": "https://randomuser.me/api/portraits/women/77.jpg",
+      "bio": "Mike Rhymes has been making waves with a distinctive flow and beats that get stuck in your head. With influences ranging from 90s hip-hop to modern trap, this artist creates music that appeals to fans across generations.",
+      "tracks": [
+        { "id": 301, "title": "Flow State", "duration": "3:56", "plays": 2145000 },
+        { "id": 302, "title": "Rhythm & Poetry", "duration": "4:23", "plays": 1876000 },
+        { "id": 303, "title": "Lyrical Genius", "duration": "3:12", "plays": 1543000 },
+        { "id": 304, "title": "Word Master", "duration": "2:58", "plays": 976000 }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Flow Master",
+      "genre": "Rap",
+      "upvotes": 3456,
+      "downvotes": 165,
+      "image": "https://randomuser.me/api/portraits/men/78.jpg",
+      "bio": "Flow Master combines intricate wordplay with smooth delivery, creating a signature sound that's instantly recognizable. Rising from local open mics to streaming success, this artist represents the new wave of independent rap talent.",
+      "tracks": [
+        { "id": 401, "title": "Smooth Criminal", "duration": "3:45", "plays": 567000 },
+        { "id": 402, "title": "Rhythm Master", "duration": "4:12", "plays": 432000 },
+        { "id": 403, "title": "Word Flow", "duration": "3:21", "plays": 876000 },
+        { "id": 404, "title": "Lyrical Waves", "duration": "2:59", "plays": 345000 }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Rhythm Rebel",
+      "genre": "Rap",
+      "upvotes": 2345,
+      "downvotes": 143,
+      "image": "https://randomuser.me/api/portraits/men/79.jpg",
+      "bio": "Rhythm Rebel breaks conventions with experimental beats and raw, unfiltered lyrics. Not afraid to tackle controversial topics, this artist pushes boundaries while maintaining a sound that's both innovative and accessible.",
+      "tracks": [
+        { "id": 501, "title": "Break the Rules", "duration": "3:34", "plays": 432000 },
+        { "id": 502, "title": "Against the Grain", "duration": "4:01", "plays": 321000 },
+        { "id": 503, "title": "Revolution Beat", "duration": "3:12", "plays": 567000 },
+        { "id": 504, "title": "Rebel Yell", "duration": "2:45", "plays": 234000 }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Verse King",
+      "genre": "Rap",
+      "upvotes": 7890,
+      "downvotes": 456,
+      "image": "https://randomuser.me/api/portraits/men/80.jpg",
+      "bio": "Verse King earned his name through complex rhyme schemes and battle rap victories. Now focusing on studio releases, this artist combines technical skill with emotional depth, creating tracks that showcase both lyrical prowess and personal growth.",
+      "tracks": [
+        { "id": 601, "title": "Crown Me", "duration": "3:45", "plays": 1234000 },
+        { "id": 602, "title": "Throne Room", "duration": "4:23", "plays": 987000 },
+        { "id": 603, "title": "Royal Flow", "duration": "3:12", "plays": 1432000 },
+        { "id": 604, "title": "King's Speech", "duration": "3:56", "plays": 876000 }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Melody Maker",
+      "genre": "Pop",
+      "upvotes": 9876,
+      "downvotes": 345,
+      "image": "https://randomuser.me/api/portraits/men/81.jpg",
+      "bio": "Melody Maker crafts infectious pop hooks that stay with you long after the song ends. With a background in classical piano and a passion for contemporary production, this artist creates the perfect blend of catchy melodies and modern beats.",
+      "tracks": [
+        { "id": 701, "title": "Catchy Tune", "duration": "3:15", "plays": 2345000 },
+        { "id": 702, "title": "Summer Hit", "duration": "3:45", "plays": 1987000 },
+        { "id": 703, "title": "Pop Paradise", "duration": "3:23", "plays": 2765000 },
+        { "id": 704, "title": "Melody Lane", "duration": "3:01", "plays": 1654000 }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Echo Harmony",
+      "genre": "Pop",
+      "upvotes": 8765,
+      "downvotes": 234,
+      "image": "https://randomuser.me/api/portraits/women/82.jpg",
+      "bio": "Echo Harmony's ethereal vocals and lush production create an immersive pop experience. Drawing inspiration from both electronic music and acoustic traditions, this artist creates soundscapes that are both innovative and accessible.",
+      "tracks": [
+        { "id": 801, "title": "Echoes of You", "duration": "4:12", "plays": 1876000 },
+        { "id": 802, "title": "Harmonic Dreams", "duration": "3:56", "plays": 1543000 },
+        { "id": 803, "title": "Resonance", "duration": "3:45", "plays": 1987000 },
+        { "id": 804, "title": "Sound Waves", "duration": "4:23", "plays": 1432000 }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Luna Voice",
+      "genre": "Pop",
+      "upvotes": 7654,
+      "downvotes": 187,
+      "image": "https://randomuser.me/api/portraits/women/83.jpg",
+      "bio": "Luna Voice captivates listeners with powerful vocals and emotional delivery. Combining pop sensibilities with R&B influences, this artist creates music that's perfect for both dancing and deep listening sessions.",
+      "tracks": [
+        { "id": 901, "title": "Moonlight Serenade", "duration": "3:45", "plays": 1765000 },
+        { "id": 902, "title": "Stellar", "duration": "3:23", "plays": 1432000 },
+        { "id": 903, "title": "Night Sky", "duration": "4:01", "plays": 1876000 },
+        { "id": 904, "title": "Cosmic Love", "duration": "3:56", "plays": 1543000 }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Sonic Wave",
+      "genre": "Pop",
+      "upvotes": 6543,
+      "downvotes": 276,
+      "image": "https://randomuser.me/api/portraits/men/84.jpg",
+      "bio": "Sonic Wave pushes the boundaries of pop with innovative production techniques and genre-blending approaches. Known for creating earworms with substance, this artist balances commercial appeal with artistic integrity.",
+      "tracks": [
+        { "id": 1001, "title": "Sound Barrier", "duration": "3:34", "plays": 1543000 },
+        { "id": 1002, "title": "Wave Length", "duration": "3:56", "plays": 1321000 },
+        { "id": 1003, "title": "Frequency", "duration": "4:12", "plays": 1765000 },
+        { "id": 1004, "title": "Sonic Boom", "duration": "3:23", "plays": 1432000 }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Crystal Notes",
+      "genre": "Pop",
+      "upvotes": 5432,
+      "downvotes": 165,
+      "image": "https://randomuser.me/api/portraits/women/85.jpg",
+      "bio": "Crystal Notes brings clarity and precision to pop music with pristine vocals and meticulously crafted production. With a background in classical training and a passion for contemporary sounds, this artist creates pop gems that shine with authenticity.",
+      "tracks": [
+        { "id": 1101, "title": "Clear Vision", "duration": "3:45", "plays": 1321000 },
+        { "id": 1102, "title": "Prism", "duration": "3:23", "plays": 1098000 },
+        { "id": 1103, "title": "Transparency", "duration": "4:01", "plays": 1432000 },
+        { "id": 1104, "title": "Crystal Ball", "duration": "3:56", "plays": 1234000 }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Harmony Heights",
+      "genre": "Pop",
+      "upvotes": 4321,
+      "downvotes": 154,
+      "image": "https://randomuser.me/api/portraits/men/86.jpg",
+      "bio": "Harmony Heights elevates pop music with soaring vocal arrangements and uplifting melodies. Creating anthems that connect with listeners on an emotional level, this artist specializes in music that inspires and empowers.",
+      "tracks": [
+        { "id": 1201, "title": "Elevation", "duration": "3:56", "plays": 1098000 },
+        { "id": 1202, "title": "Higher Ground", "duration": "4:12", "plays": 987000 },
+        { "id": 1203, "title": "Ascend", "duration": "3:45", "plays": 1234000 },
+        { "id": 1204, "title": "Summit", "duration": "3:23", "plays": 876000 }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Soul Seeker",
+      "genre": "R&B",
+      "upvotes": 3210,
+      "downvotes": 143,
+      "image": "https://randomuser.me/api/portraits/men/87.jpg",
+      "bio": "Soul Seeker digs deep into emotional territory with authentic R&B that speaks to the heart. Combining classic influences with contemporary production, this artist creates music that honors tradition while pushing the genre forward.",
+      "tracks": [
+        { "id": 1301, "title": "Inner Journey", "duration": "4:23", "plays": 876000 },
+        { "id": 1302, "title": "Heart & Soul", "duration": "3:56", "plays": 765000 },
+        { "id": 1303, "title": "Spiritual", "duration": "5:12", "plays": 987000 },
+        { "id": 1304, "title": "Deep Connection", "duration": "4:45", "plays": 654000 }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Smooth Groove",
+      "genre": "R&B",
+      "upvotes": 2109,
+      "downvotes": 132,
+      "image": "https://randomuser.me/api/portraits/men/88.jpg",
+      "bio": "Smooth Groove lives up to the name with silky vocals and laid-back beats that create the perfect vibe. Specializing in late-night listening and intimate moments, this artist crafts R&B that's both sensual and sophisticated.",
+      "tracks": [
+        { "id": 1401, "title": "Midnight Mood", "duration": "4:12", "plays": 765000 },
+        { "id": 1402, "title": "Slow Jam", "duration": "5:23", "plays": 654000 },
+        { "id": 1403, "title": "Velvet Touch", "duration": "3:56", "plays": 876000 },
+        { "id": 1404, "title": "Easy Feeling", "duration": "4:45", "plays": 543000 }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Velvet Voice",
+      "genre": "R&B",
+      "upvotes": 1098,
+      "downvotes": 121,
+      "image": "https://randomuser.me/api/portraits/men/89.jpg",
+      "bio": "Velvet Voice captivates with rich, textured vocals that convey emotion with every note. Creating modern R&B with classic sensibilities, this artist balances technical prowess with raw feeling to create music that resonates deeply.",
+      "tracks": [
+        { "id": 1501, "title": "Smooth Operator", "duration": "4:45", "plays": 654000 },
+        { "id": 1502, "title": "Silky", "duration": "3:56", "plays": 543000 },
+        { "id": 1503, "title": "Texture", "duration": "4:23", "plays": 765000 },
+        { "id": 1504, "title": "Rich Tones", "duration": "5:12", "plays": 432000 }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Rhythm Soul",
+      "genre": "R&B",
+      "upvotes": 987,
+      "downvotes": 110,
+      "image": "https://randomuser.me/api/portraits/men/90.jpg",
+      "bio": "Rhythm Soul blends infectious grooves with heartfelt lyrics to create R&B that moves both body and spirit. Drawing from funk, jazz, and gospel influences, this artist creates a sound that's both nostalgic and fresh.",
+      "tracks": [
+        { "id": 1601, "title": "Groove Therapy", "duration": "4:12", "plays": 543000 },
+        { "id": 1602, "title": "Soul Movement", "duration": "3:56", "plays": 432000 },
+        { "id": 1603, "title": "Rhythm Nation", "duration": "4:45", "plays": 654000 },
+        { "id": 1604, "title": "Funk & Soul", "duration": "5:23", "plays": 321000 }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Mellow Tone",
+      "genre": "R&B",
+      "upvotes": 876,
+      "downvotes": 109,
+      "image": "https://randomuser.me/api/portraits/women/91.jpg",
+      "bio": "Mellow Tone creates the perfect soundtrack for relaxation with smooth R&B that soothes the soul. Combining jazz-influenced instrumentation with contemporary production, this artist specializes in creating an atmosphere of calm and reflection.",
+      "tracks": [
+        { "id": 1701, "title": "Chill Mode", "duration": "5:12", "plays": 432000 },
+        { "id": 1702, "title": "Relaxation", "duration": "4:45", "plays": 321000 },
+        { "id": 1703, "title": "Easy Listening", "duration": "4:23", "plays": 543000 },
+        { "id": 1704, "title": "Smooth Sailing", "duration": "3:56", "plays": 234000 }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Harmony Flow",
+      "genre": "R&B",
+      "upvotes": 765,
+      "downvotes": 98,
+      "image": "https://randomuser.me/api/portraits/women/92.jpg",
+      "bio": "Harmony Flow weaves complex vocal arrangements with contemporary R&B production to create a unique sonic experience. Known for both technical ability and emotional delivery, this artist creates music that showcases the full range of R&B possibilities.",
+      "tracks": [
+        { "id": 1801, "title": "Vocal Symphony", "duration": "4:45", "plays": 321000 },
+        { "id": 1802, "title": "Harmonic Convergence", "duration": "5:12", "plays": 234000 },
+        { "id": 1803, "title": "Flow State", "duration": "4:23", "plays": 432000 },
+        { "id": 1804, "title": "Melodic Journey", "duration": "3:56", "plays": 198000 }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Beat Maker",
+      "genre": "Electronic",
+      "upvotes": 3421,
+      "downvotes": 187,
+      "image": "https://randomuser.me/api/portraits/women/93.jpg",
+      "bio": "Beat Maker pushes the boundaries of electronic music with innovative production techniques and unexpected sound design. Creating tracks that work both on the dance floor and for headphone listening, this artist balances experimental approaches with accessible structures.",
+      "tracks": [
+        { "id": 1901, "title": "Digital Dreams", "duration": "5:45", "plays": 876000 },
+        { "id": 1902, "title": "Synth City", "duration": "6:23", "plays": 765000 },
+        { "id": 1903, "title": "Beat Laboratory", "duration": "4:56", "plays": 987000 },
+        { "id": 1904, "title": "Electronic Pulse", "duration": "5:34", "plays": 654000 }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "DJ Fusion",
+      "genre": "Electronic",
+      "upvotes": 2876,
+      "downvotes": 165,
+      "image": "https://randomuser.me/api/portraits/women/94.jpg",
+      "bio": "DJ Fusion blends genres and cultures to create electronic music that defies easy categorization. Drawing from global influences and cutting-edge production techniques, this artist creates tracks that surprise and delight with each listen.",
+      "tracks": [
+        { "id": 2001, "title": "Global Beats", "duration": "6:12", "plays": 765000 },
+        { "id": 2002, "title": "Cultural Mix", "duration": "5:45", "plays": 654000 },
+        { "id": 2003, "title": "Fusion Reactor", "duration": "7:23", "plays": 876000 },
+        { "id": 2004, "title": "Hybrid Theory", "duration": "5:56", "plays": 543000 }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Synth Master",
+      "genre": "Electronic",
+      "upvotes": 4532,
+      "downvotes": 234,
+      "image": "https://randomuser.me/api/portraits/women/95.jpg",
+      "bio": "Synth Master creates electronic soundscapes with vintage synthesizers and modern production techniques. Balancing nostalgia for 80s electronic music with contemporary approaches, this artist crafts tracks that are both retro and forward-thinking.",
+      "tracks": [
+        { "id": 2101, "title": "Analog Dreams", "duration": "5:34", "plays": 987000 },
+        { "id": 2102, "title": "Synthesize", "duration": "6:12", "plays": 876000 },
+        { "id": 2103, "title": "Waveform", "duration": "5:45", "plays": 1098000 },
+        { "id": 2104, "title": "Circuit Bender", "duration": "7:23", "plays": 765000 }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Rock Star",
+      "genre": "Rock",
+      "upvotes": 5678,
+      "downvotes": 321,
+      "image": "https://randomuser.me/api/portraits/women/96.jpg",
+      "bio": "Rock Star brings raw energy and authentic passion to modern rock music. Combining powerful vocals with guitar-driven arrangements, this artist creates anthems that capture the spirit of classic rock while speaking to contemporary audiences.",
+      "tracks": [
+        { "id": 2201, "title": "Electric Heart", "duration": "4:23", "plays": 1098000 },
+        { "id": 2202, "title": "Guitar Hero", "duration": "5:12", "plays": 987000 },
+        { "id": 2203, "title": "Stadium Anthem", "duration": "4:45", "plays": 1234000 },
+        { "id": 2204, "title": "Rock & Roll Soul", "duration": "3:56", "plays": 876000 }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Guitar Hero",
+      "genre": "Rock",
+      "upvotes": 4321,
+      "downvotes": 234,
+      "image": "https://randomuser.me/api/portraits/men/97.jpg",
+      "bio": "Guitar Hero showcases technical virtuosity and emotional expression through six-string mastery. Creating rock music that puts the guitar front and center, this artist balances impressive solos with strong songwriting to create tracks that appeal to both musicians and casual listeners.",
+      "tracks": [
+        { "id": 2301, "title": "Six String Symphony", "duration": "6:45", "plays": 987000 },
+        { "id": 2302, "title": "Fretboard Wizard", "duration": "5:23", "plays": 876000 },
+        { "id": 2303, "title": "Amplified", "duration": "4:56", "plays": 1098000 },
+        { "id": 2304, "title": "Guitar God", "duration": "7:12", "plays": 765000 }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Drum Beast",
+      "genre": "Rock",
+      "upvotes": 3456,
+      "downvotes": 187,
+      "image": "https://randomuser.me/api/portraits/men/98.jpg",
+      "bio": "Drum Beast drives rock music forward with powerful rhythms and innovative percussion approaches. Creating tracks built around dynamic drumming, this artist combines technical skill with primal energy to create rock that moves both body and mind.",
+      "tracks": [
+        { "id": 2401, "title": "Rhythm Machine", "duration": "5:12", "plays": 876000 },
+        { "id": 2402, "title": "Percussion Concerto", "duration": "6:45", "plays": 765000 },
+        { "id": 2403, "title": "Drumline", "duration": "4:23", "plays": 987000 },
+        { "id": 2404, "title": "Beat Keeper", "duration": "5:56", "plays": 654000 }
+      ]
+    }
+  ]
+}
