@@ -258,13 +258,36 @@ const resetFilters = () => {
   };
 };
 
+
+interface Artist {
+  id: number;
+  name: string;
+  genre: string;
+  followers: string;
+  experience: string;
+  region: string;
+  matchScore: number;
+  communityScore: number;
+  communityVotes: number;
+  image: string;
+  growth: string;
+  engagement: string;
+  recentRelease: string;
+  releaseDate: string;
+  weeklyListens: number;
+  weeklyChange: number;
+  socialLinks: string[];
+  isNew: boolean;
+  isSaved: boolean;
+}
+
 const uniqueGenres = Array.from(new Set(matchedArtists.value.map(artist => artist.genre)));
 const uniqueRegions = Array.from(new Set(matchedArtists.value.map(artist => artist.region)));
 
-const selectedArtist = ref(null);
+const selectedArtist = ref<Artist | null>(null);
 const showArtistModal = ref(false);
 
-const openArtistDetails = (artist) => {
+const openArtistDetails = (artist: Artist) => {
   selectedArtist.value = artist;
   showArtistModal.value = true;
 };
@@ -273,7 +296,7 @@ const closeArtistModal = () => {
   showArtistModal.value = false;
 };
 
-const toggleSaveArtist = (artist) => {
+const toggleSaveArtist = (artist: Artist) => {
   artist.isSaved = !artist.isSaved;
 };
 </script>

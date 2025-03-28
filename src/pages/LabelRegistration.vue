@@ -39,7 +39,7 @@ const budgetRanges = [
   '50 000€-100 000€', 'Plus de 100 000€'
 ];
 
-// Soumission du formulaire
+
 const isSubmitting = ref(false);
 const isSuccess = ref(false);
 const errorMessage = ref('');
@@ -190,7 +190,6 @@ const toggleSelection = (array: string[], item: string) => {
               </div>
             </div>
             
-            <!-- Taille d'Audience -->
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Taille d'Audience Préférée</label>
               <div class="flex flex-wrap gap-2">
@@ -213,7 +212,7 @@ const toggleSelection = (array: string[], item: string) => {
               </div>
             </div>
             
-            <!-- Expérience d'Artiste -->
+
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-2">Niveau d'Expérience Artiste</label>
               <div class="flex flex-wrap gap-2">
