@@ -58,7 +58,7 @@ const handleUpvote = () => {
       variant="ghost" 
       size="sm" 
       class="mb-6" 
-      @click="router.push('/artists')"
+      @click="router.push('/')"
     >
       <ArrowLeft class="mr-2" />
       Retour aux Artistes
@@ -70,7 +70,7 @@ const handleUpvote = () => {
       <CardDescription>
         L'artiste que vous recherchez n'existe pas ou a été supprimé.
       </CardDescription>
-      <Button class="mt-6" @click="router.push('/artists')">
+      <Button class="mt-6" @click="router.push('/')">
         Retour aux Artistes
       </Button>
     </Card>
