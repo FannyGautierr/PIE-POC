@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
-import { Menu, X, Home, Users, LayoutDashboard, Music } from 'lucide-vue-next';
+import { Menu, Home, Users, LayoutDashboard, Music } from 'lucide-vue-next';
 import { Button } from '@/components/ui/button';
 import {
   Sheet,
