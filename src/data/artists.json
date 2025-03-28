@@ -5,7 +5,6 @@
       "name": "Alex Beats",
       "genre": "Rap",
       "upvotes": 4598,
-      "downvotes": 254,
       "image": "/artists/josman.jpg",
       "bio": "Alex Beats est un rappeur émergent qui s'est imposé sur la scène hip-hop avec son style unique mêlant rap old-school et sonorités modernes. Avec une base de fans en constante croissance et plusieurs titres viraux, il gagne rapidement en reconnaissance dans la scène rap underground française.",
       "tracks": [
@@ -20,7 +19,6 @@
       "name": "Lyrical Storm",
       "genre": "Rap",
       "upvotes": 6743,
-      "downvotes": 387,
       "image": "/artists/luidji.jpg",
       "bio": "Lyrical Storm apporte une perspective fraîche au rap avec des paroles profondes et des beats innovants. Connu pour ses récits qui touchent les auditeurs à un niveau personnel, cet artiste redéfinit l'authenticité dans la scène musicale actuelle avec son style mélancolique et poétique.",
       "tracks": [
@@ -35,7 +33,6 @@
       "name": "Mike Rhymes",
       "genre": "Rap",
       "upvotes": 8912,
-      "downvotes": 645,
       "image": "/artists/lala-ce.jpg",
       "bio": "Mike Rhymes fait des vagues avec un flow distinctif et des beats qui restent en tête. Avec des influences allant du hip-hop des années 90 à la trap moderne, cet artiste crée une musique qui séduit les fans de toutes générations, tout en apportant une touche unique à la scène rap française.",
       "tracks": [
@@ -50,7 +47,6 @@
       "name": "Rhythm Rebel",
       "genre": "Rap",
       "upvotes": 2345,
-      "downvotes": 143,
       "image": "/artists/laylow.jpg",
       "bio": "Rhythm Rebel brise les conventions avec des beats expérimentaux et des paroles brutes et non filtrées. N'ayant pas peur d'aborder des sujets controversés, cet artiste repousse les limites tout en maintenant un son à la fois innovant et accessible, mêlant rap et influences futuristes.",
       "tracks": [
@@ -65,7 +61,6 @@
       "name": "Verse King",
       "genre": "Rap",
       "upvotes": 7890,
-      "downvotes": 456,
       "image": "/artists/alpha-wann.png",
       "bio": "Verse King a gagné sa réputation grâce à des schémas de rimes complexes et une technique impressionnante. Se concentrant désormais sur les sorties studio, cet artiste combine compétence technique et profondeur émotionnelle, créant des morceaux qui mettent en valeur à la fois sa prouesse lyrique et sa croissance personnelle.",
       "tracks": [
@@ -80,7 +75,6 @@
       "name": "Melody Maker",
       "genre": "Pop",
       "upvotes": 9876,
-      "downvotes": 345,
       "image": "/artists/angele.jpg",
       "bio": "Melody Maker crée des accroches pop infectieuses qui restent avec vous longtemps après la fin de la chanson. Avec une formation en piano classique et une passion pour la production contemporaine, cette artiste crée le mélange parfait de mélodies accrocheuses et de beats modernes.",
       "tracks": [
@@ -95,7 +89,6 @@
       "name": "Echo Harmony",
       "genre": "Pop",
       "upvotes": 8765,
-      "downvotes": 234,
       "image": "/artists/juliette-armanet.jpg",
       "bio": "Echo Harmony avec ses vocaux éthérés et sa production luxuriante crée une expérience pop immersive. S'inspirant à la fois de la musique électronique et des traditions acoustiques, cette artiste crée des paysages sonores à la fois innovants et accessibles, avec une touche de nostalgie française.",
       "tracks": [
@@ -110,7 +103,6 @@
       "name": "Luna Voice",
       "genre": "Pop",
       "upvotes": 7654,
-      "downvotes": 187,
       "image": "/artists/clara-luciani.jpg",
       "bio": "Luna Voice captive les auditeurs avec des vocaux puissants et une livraison émotionnelle. Combinant sensibilités pop avec des influences rock et disco, cette artiste crée une musique parfaite à la fois pour danser et pour des sessions d'écoute plus profondes.",
       "tracks": [
@@ -125,7 +117,6 @@
       "name": "Crystal Notes",
       "genre": "Pop",
       "upvotes": 5432,
-      "downvotes": 165,
       "image": "/artists/pomme.webp",
       "bio": "Crystal Notes apporte clarté et précision à la musique pop avec des vocaux cristallins et une production méticuleusement élaborée. Avec une formation classique et une passion pour les sons contemporains, cette artiste crée des joyaux pop qui brillent par leur authenticité et leur délicatesse.",
       "tracks": [
@@ -140,7 +131,6 @@
       "name": "Soul Seeker",
       "genre": "R&B",
       "upvotes": 3210,
-      "downvotes": 143,
       "image": "/artists/ichon.jpeg",
       "bio": "Soul Seeker creuse profondément dans le territoire émotionnel avec du R&B authentique qui parle au cœur. Combinant influences classiques et production contemporaine, cet artiste crée une musique qui honore la tradition tout en poussant le genre vers l'avant avec une sensibilité unique.",
       "tracks": [
@@ -155,7 +145,6 @@
       "name": "Smooth Groove",
       "genre": "R&B",
       "upvotes": 2109,
-      "downvotes": 132,
       "image": "/artists/lous-and-the-yakuza.jpg",
       "bio": "Smooth Groove porte bien son nom avec des vocaux soyeux et des beats décontractés qui créent l'ambiance parfaite. Spécialisé dans l'écoute nocturne et les moments intimes, cet artiste façonne un R&B à la fois sensuel et sophistiqué avec des influences trap.",
       "tracks": [
@@ -170,7 +159,6 @@
       "name": "Velvet Voice",
       "genre": "R&B",
       "upvotes": 1098,
-      "downvotes": 121,
       "image": "/artists/tayc.jpeg",
       "bio": "Velvet Voice captive avec des vocaux riches et texturés qui transmettent l'émotion à chaque note. Créant du R&B moderne avec des sensibilités classiques, cet artiste équilibre prouesse technique et sentiment brut pour créer une musique qui résonne profondément avec son public.",
       "tracks": [
@@ -185,7 +173,6 @@
       "name": "Mellow Tone",
       "genre": "R&B",
       "upvotes": 876,
-      "downvotes": 109,
       "image": "/artists/enchantee-julia.jpg",
       "bio": "Mellow Tone crée la bande-son parfaite pour la détente avec un R&B doux qui apaise l'âme. Combinant une instrumentation influencée par le jazz avec une production contemporaine, cette artiste se spécialise dans la création d'une atmosphère de calme et de réflexion.",
       "tracks": [
@@ -200,7 +187,6 @@
       "name": "Harmony Flow",
       "genre": "R&B",
       "upvotes": 765,
-      "downvotes": 98,
       "image": "/artists/yseult.jpg",
       "bio": "Harmony Flow tisse des arrangements vocaux complexes avec une production R&B contemporaine pour créer une expérience sonore unique. Connue à la fois pour sa capacité technique et sa livraison émotionnelle, cette artiste crée une musique qui met en valeur toute la gamme des possibilités du R&B.",
       "tracks": [
@@ -213,24 +199,23 @@
     {
       "id": 19,
       "name": "Beat Maker",
-      "genre": "Electronic",
+      "genre": "Électronique",
       "upvotes": 3421,
       "downvotes": 187,
       "image": "/artists/rone.jpg",
       "bio": "Beat Maker repousse les limites de la musique électronique avec des techniques de production innovantes et un design sonore inattendu. Créant des morceaux qui fonctionnent aussi bien sur la piste de danse que pour l'écoute au casque, cet artiste équilibre approches expérimentales et structures accessibles.",
       "tracks": [
-        { "id": 1901, "title": "Bye Bye Macadam", "duration": "5:45", "plays": 876000 },
-        { "id": 1902, "title": "Motion", "duration": "6:23", "plays": 765000 },
-        { "id": 1903, "title": "Parade", "duration": "4:56", "plays": 987000 },
-        { "id": 1904, "title": "Origami", "duration": "5:34", "plays": 654000 }
+        { "id": 1901, "title": "Bye Bye Macadam", "duration": "5:45", "écoutes": 876000 },
+        { "id": 1902, "title": "Mouvement", "duration": "6:23", "écoutes": 765000 },
+        { "id": 1903, "title": "Parade", "duration": "4:56", "écoutes": 987000 },
+        { "id": 1904, "title": "Origami", "duration": "5:34", "écoutes": 654000 }
       ]
     },
     {
       "id": 20,
       "name": "DJ Fusion",
-      "genre": "Electronic",
+      "genre": "Électronique",
       "upvotes": 2876,
-      "downvotes": 165,
       "image": "/artists/petit-biscuit.jpg",
       "bio": "DJ Fusion mélange les genres et les cultures pour créer une musique électronique qui défie toute catégorisation facile. S'inspirant d'influences mondiales et de techniques de production de pointe, cet artiste crée des morceaux qui surprennent et ravissent à chaque écoute.",
       "tracks": [
@@ -243,9 +228,8 @@
     {
       "id": 21,
       "name": "Synth Master",
-      "genre": "Electronic",
+      "genre": "Électronique",
       "upvotes": 4532,
-      "downvotes": 234,
       "image": "/artists/thylacine.jpg",
       "bio": "Synth Master crée des paysages sonores électroniques avec des synthétiseurs vintage et des techniques de production modernes. Équilibrant la nostalgie de la musique électronique des années 80 avec des approches contemporaines, cet artiste façonne des morceaux à la fois rétro et avant-gardistes.",
       "tracks": [
@@ -260,7 +244,6 @@
       "name": "Rock Star",
       "genre": "Rock",
       "upvotes": 5678,
-      "downvotes": 321,
       "image": "/artists/zaho-de-sagazan.jpg",
       "bio": "Rock Star apporte une énergie brute et une passion authentique à la musique rock moderne. Combinant des vocaux puissants avec des arrangements portés par la guitare, cette artiste crée des hymnes qui capturent l'esprit du rock classique tout en parlant aux publics contemporains.",
       "tracks": [
@@ -275,7 +258,6 @@
       "name": "Guitar Hero",
       "genre": "Rock",
       "upvotes": 4321,
-      "downvotes": 234,
       "image": "/artists/feu-chatterton.jpg",
       "bio": "Guitar Hero met en valeur la virtuosité technique et l'expression émotionnelle à travers une maîtrise musicale complète. Créant une musique rock qui met la poésie au premier plan, ce groupe équilibre compositions impressionnantes et écriture solide pour créer des morceaux qui plaisent aux musiciens comme aux auditeurs occasionnels.",
       "tracks": [
@@ -290,7 +272,6 @@
       "name": "Drum Beast",
       "genre": "Rock",
       "upvotes": 3456,
-      "downvotes": 187,
       "image": "/artists/last-train.jpg",
       "bio": "Drum Beast fait avancer la musique rock avec des rythmes puissants et des approches percussives innovantes. Créant des morceaux construits autour d'une batterie dynamique, ce groupe combine compétence technique et énergie primale pour créer un rock qui fait bouger à la fois le corps et l'esprit.",
       "tracks": [

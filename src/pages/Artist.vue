@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import { ref, computed, onMounted } from 'vue';
+import { ref, onMounted } from 'vue';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ThumbsUp, ThumbsDown, ArrowLeft, Music, Youtube, Instagram, Twitter } from 'lucide-vue-next';
+import { ThumbsUp, ArrowLeft, Music, Youtube, Instagram, Twitter } from 'lucide-vue-next';
 import { useRouter, useRoute } from 'vue-router';
 import artistsData from '@/data/artists.json';
 
@@ -11,7 +11,7 @@ const route = useRoute();
 
 // Artist data from JSON file
 const artist = ref<any>(null);
-const userVote = ref<'up' | 'down' | null>(null);
+const userVote = ref<'up' | null>(null);
 const notFound = ref(false);
 
 // Fetch artist data based on route ID
@@ -45,49 +45,9 @@ const handleUpvote = () => {
     artist.value.upvotes--;
     userVote.value = null;
   } else {
-    // Add upvote (and remove downvote if exists)
-    if (userVote.value === 'down') {
-      artist.value.downvotes--;
-    }
     artist.value.upvotes++;
     userVote.value = 'up';
   }
-};
-
-// Handle downvote
-const handleDownvote = () => {
-  if (!artist.value) return;
-  
-  if (userVote.value === 'down') {
-    // Remove downvote
-    artist.value.downvotes--;
-    userVote.value = null;
-  } else {
-    // Add downvote (and remove upvote if exists)
-    if (userVote.value === 'up') {
-      artist.value.upvotes--;
-    }
-    artist.value.downvotes++;
-    userVote.value = 'down';
-  }
-};
-
-// Calculate vote ratio for progress bar
-const voteRatio = computed(() => {
-  if (!artist.value) return 50;
-  
-  const total = artist.value.upvotes + artist.value.downvotes;
-  return total > 0 ? (artist.value.upvotes / total) * 100 : 50;
-});
-
-// Format number with K/M suffix
-const formatNumber = (num: number): string => {
-  if (num >= 1000000) {
-    return (num / 1000000).toFixed(1) + 'M';
-  } else if (num >= 1000) {
-    return (num / 1000).toFixed(1) + 'K';
-  }
-  return num.toString();
 };
 </script>
 
@@ -101,17 +61,17 @@ const formatNumber = (num: number): string => {
       @click="router.push('/artists')"
     >
       <ArrowLeft class="mr-2" />
-      Back to Artists
+      Retour aux Artistes
     </Button>
 
     <!-- Not found message -->
     <Card v-if="notFound" class="p-8 text-center">
-      <CardTitle class="text-2xl mb-4">Artist Not Found</CardTitle>
+      <CardTitle class="text-2xl mb-4">Artiste Non Trouvé</CardTitle>
       <CardDescription>
-        The artist you're looking for doesn't exist or has been removed.
+        L'artiste que vous recherchez n'existe pas ou a été supprimé.
       </CardDescription>
       <Button class="mt-6" @click="router.push('/artists')">
-        Return to Artists
+        Retour aux Artistes
       </Button>
     </Card>
 
@@ -138,45 +98,18 @@ const formatNumber = (num: number): string => {
               <div class="flex items-center gap-4">
                 <Button 
                   variant="outline" 
-                  size="icon" 
                   class="rounded-full"
-                  :class="{ 'bg-green-100 border-green-500': userVote === 'up' }"
+                  :class="{ 'bg-green-100 border-green-500 text-green-600': userVote === 'up' }"
                   @click="handleUpvote"
                 >
-                  <ThumbsUp :class="{ 'text-green-600': userVote === 'up' }" />
-                </Button>
-                
-                <Button 
-                  variant="outline" 
-                  size="icon" 
-                  class="rounded-full"
-                  :class="{ 'bg-red-100 border-red-500': userVote === 'down' }"
-                  @click="handleDownvote"
-                >
-                  <ThumbsDown :class="{ 'text-red-600': userVote === 'down' }" />
+                  <ThumbsUp />
+                  {{ artist.upvotes }}
                 </Button>
               </div>
             </div>
           </CardHeader>
 
           <CardContent class="px-0">
-            <!-- Vote stats -->
-            <div class="mb-6">
-              <div class="flex justify-between mb-2">
-                <span class="text-sm font-medium flex items-center gap-1">
-                  <ThumbsUp class="size-4" /> {{ formatNumber(artist.upvotes) }}
-                </span>
-                <span class="text-sm font-medium flex items-center gap-1">
-                  {{ formatNumber(artist.downvotes) }} <ThumbsDown class="size-4" />
-                </span>
-              </div>
-              <div class="h-2 w-full bg-gray-200 rounded-full overflow-hidden">
-                <div 
-                  class="h-full bg-green-500 rounded-full" 
-                  :style="{ width: `${voteRatio}%` }"
-                ></div>
-              </div>
-            </div>
 
             <!-- Artist bio -->
             <p class="text-gray-700 mb-6">{{ artist.bio }}</p>
@@ -230,7 +163,7 @@ const formatNumber = (num: number): string => {
 
       <!-- Tracks section -->
       <div>
-        <h2 class="text-2xl font-bold mb-4">Popular Tracks</h2>
+        <h2 class="text-2xl font-bold mb-4">Titres Populaires</h2>
         <Card>
           <div class="divide-y">
             <div 
@@ -243,7 +176,7 @@ const formatNumber = (num: number): string => {
                 <p class="text-sm text-gray-500">{{ track.duration }}</p>
               </div>
               <div class="text-sm text-gray-500">
-                {{ formatNumber(track.plays) }} plays
+                {{ track.plays }} écoutes
               </div>
             </div>
           </div>

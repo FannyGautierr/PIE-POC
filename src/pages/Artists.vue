@@ -10,7 +10,7 @@ import {
   SelectTrigger,
   SelectValue
 } from '@/components/ui/select';
-import { ThumbsUp, ThumbsDown, ChevronRight, Search, X } from 'lucide-vue-next';
+import { ThumbsUp, ChevronRight, Search, X } from 'lucide-vue-next';
 import artistsData from '@/data/artists.json';
 
 // Import artists from JSON file
@@ -38,7 +38,7 @@ const genres = ref([
 // Search and filter state
 const searchQuery = ref('');
 const isSearchActive = ref(false);
-const sortOption = ref('upvotes'); // 'upvotes', 'downvotes', 'ratio'
+const sortOption = ref('upvotes'); // 'upvotes', 'ratio'
 const filterGenre = ref('all'); // 'all', 'Rap', 'Pop', 'R&B', etc.
 const searchTimeout = ref<number | null>(null);
 
@@ -92,13 +92,10 @@ const filteredArtists = computed(() => {
     case 'upvotes':
       result.sort((a, b) => b.upvotes - a.upvotes);
       break;
-    case 'downvotes':
-      result.sort((a, b) => b.downvotes - a.downvotes);
-      break;
     case 'ratio':
       result.sort((a, b) => {
-        const ratioA = a.upvotes / (a.upvotes + a.downvotes);
-        const ratioB = b.upvotes / (b.upvotes + b.downvotes);
+        const ratioA = a.upvotes / (a.upvotes + 1); // Ajout de 1 pour éviter division par zéro
+        const ratioB = b.upvotes / (b.upvotes + 1);
         return ratioB - ratioA;
       });
       break;
@@ -133,14 +130,8 @@ const formatNumber = (num: number): string => {
   return num.toString();
 };
 
-// Calculate vote ratio for progress bar
-const getVoteRatio = (upvotes: number, downvotes: number): number => {
-  const total = upvotes + downvotes;
-  return total > 0 ? (upvotes / total) * 100 : 50;
-};
-
 // User's votes (in a real app, this would be stored in a database)
-const userVotes = ref<Record<number, 'up' | 'down' | null>>({});
+const userVotes = ref<Record<number, 'up' | null>>({});
 
 // Handle upvote
 const handleUpvote = (artistId: number, genreIndex: number = -1, artistIndex: number = -1) => {
@@ -160,46 +151,16 @@ const handleUpvote = (artistId: number, genreIndex: number = -1, artistIndex: nu
     artist.upvotes--;
     userVotes.value[artistId] = null;
   } else {
-    // Add upvote (and remove downvote if exists)
-    if (userVotes.value[artistId] === 'down') {
-      artist.downvotes--;
-    }
+    // Add upvote
     artist.upvotes++;
     userVotes.value[artistId] = 'up';
-  }
-};
-
-// Handle downvote
-const handleDownvote = (artistId: number, genreIndex: number = -1, artistIndex: number = -1) => {
-  let artist;
-  
-  if (genreIndex >= 0 && artistIndex >= 0) {
-    // Downvoting from genre view
-    artist = genres.value[genreIndex].artists[artistIndex];
-  } else {
-    // Downvoting from search results
-    artist = allArtists.value.find(a => a.id === artistId);
-    if (!artist) return;
-  }
-  
-  if (userVotes.value[artistId] === 'down') {
-    // Remove downvote
-    artist.downvotes--;
-    userVotes.value[artistId] = null;
-  } else {
-    // Add downvote (and remove upvote if exists)
-    if (userVotes.value[artistId] === 'up') {
-      artist.upvotes--;
-    }
-    artist.downvotes++;
-    userVotes.value[artistId] = 'down';
   }
 };
 </script>
 
 <template>
   <div class="p-6 md:p-12">
-    <h1 class="text-4xl font-bold mb-6">Artists</h1>
+    <h1 class="text-4xl font-bold mb-6">Artistes</h1>
     
     <!-- Search and filter bar -->
     <div class="mb-12">
@@ -211,7 +172,7 @@ const handleDownvote = (artistId: number, genreIndex: number = -1, artistIndex: 
           </div>
           <Input 
             v-model="searchQuery"
-            placeholder="Search artists or genres..." 
+            placeholder="Rechercher des artistes ou genres..." 
             class="pl-10"
           />
           <button 
@@ -231,7 +192,7 @@ const handleDownvote = (artistId: number, genreIndex: number = -1, artistIndex: 
               <SelectValue placeholder="Genre" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="all">All Genres</SelectItem>
+              <SelectItem value="all">Tous les genres</SelectItem>
               <SelectItem 
                 v-for="genre in availableGenres.filter(g => g !== 'all')" 
                 :key="genre" 
@@ -245,13 +206,8 @@ const handleDownvote = (artistId: number, genreIndex: number = -1, artistIndex: 
           <!-- Sort options -->
           <Select v-model="sortOption" @update:model-value="isSearchActive = true">
             <SelectTrigger class="w-[160px]">
-              <SelectValue placeholder="Sort by" />
+              <SelectValue placeholder="Trier par" />
             </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="upvotes">Most Upvotes</SelectItem>
-              <SelectItem value="downvotes">Most Downvotes</SelectItem>
-              <SelectItem value="ratio">Best Ratio</SelectItem>
-            </SelectContent>
           </Select>
         </div>
       </div>
@@ -261,8 +217,8 @@ const handleDownvote = (artistId: number, genreIndex: number = -1, artistIndex: 
     <div v-if="isSearchActive" class="mb-12">
       <Card class="p-6 shadow-sm">
         <h2 class="text-2xl font-bold mb-6">
-          Search Results
-          <span class="text-sm font-normal text-gray-500 ml-2">{{ filteredArtists.length }} artists found</span>
+          Résultats de recherche
+          <span class="text-sm font-normal text-gray-500 ml-2">{{ filteredArtists.length }} artistes trouvés</span>
         </h2>
         
         <div v-if="filteredArtists.length > 0" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
@@ -276,16 +232,8 @@ const handleDownvote = (artistId: number, genreIndex: number = -1, artistIndex: 
                   <h3 class="text-xl font-medium">{{ artist.name }}</h3>
                   <p class="text-sm opacity-80">{{ artist.genre }}</p>
                   
-                  <!-- Vote progress bar -->
-                  <div class="w-full h-1 bg-gray-600 rounded-full mt-2 mb-2 overflow-hidden">
-                    <div 
-                      class="h-full bg-green-500 rounded-full" 
-                      :style="{ width: `${getVoteRatio(artist.upvotes, artist.downvotes)}%` }"
-                    ></div>
-                  </div>
-                  
                   <!-- Vote counts with interactive buttons -->
-                  <div class="flex justify-between text-xs">
+                  <div class="flex justify-between text-xs pt-1">
                     <Button 
                       variant="outline" 
                       size="sm" 
@@ -295,16 +243,6 @@ const handleDownvote = (artistId: number, genreIndex: number = -1, artistIndex: 
                     >
                       <ThumbsUp class="size-3" /> {{ formatNumber(artist.upvotes) }}
                     </Button>
-                    
-                    <Button 
-                      variant="outline" 
-                      size="sm" 
-                      class="rounded-full px-2 py-1 h-auto flex items-center gap-1 text-xs border bg-white/10 border-gray-500 hover:text-red-400 text-white hover:bg-red-900/30 hover:border-red-400"
-                      :class="{ 'bg-red-900/50 border-red-400 text-red-400': userVotes[artist.id] === 'down' }"
-                      @click.prevent="handleDownvote(artist.id)"
-                    >
-                      {{ formatNumber(artist.downvotes) }} <ThumbsDown class="size-3" />
-                    </Button>
                   </div>
                 </div>
               </Card>
@@ -313,7 +251,7 @@ const handleDownvote = (artistId: number, genreIndex: number = -1, artistIndex: 
         </div>
         
         <div v-else class="text-center py-12">
-          <p class="text-gray-500">No artists found matching your search criteria.</p>
+          <p class="text-gray-500">Aucun artiste ne correspond à vos critères de recherche.</p>
         </div>
       </Card>
     </div>
@@ -335,16 +273,8 @@ const handleDownvote = (artistId: number, genreIndex: number = -1, artistIndex: 
                   <div class="p-3 flex flex-col justify-end absolute top-0 left-0 w-full h-full text-white">
                     <h3 class="text-xl font-medium">{{ artist.name }}</h3>
                     
-                    <!-- Vote progress bar -->
-                    <div class="w-full h-1 bg-gray-600 rounded-full mt-2 mb-2 overflow-hidden">
-                      <div 
-                        class="h-full bg-green-500 rounded-full" 
-                        :style="{ width: `${getVoteRatio(artist.upvotes, artist.downvotes)}%` }"
-                      ></div>
-                    </div>
-                    
                     <!-- Vote counts with interactive buttons -->
-                    <div class="flex justify-between text-xs">
+                    <div class="flex justify-between text-xs pt-1">
                       <Button 
                         variant="outline" 
                         size="sm" 
@@ -353,16 +283,6 @@ const handleDownvote = (artistId: number, genreIndex: number = -1, artistIndex: 
                         @click.prevent="handleUpvote(artist.id, genreIndex, artistIndex)"
                       >
                         <ThumbsUp class="size-3" /> {{ formatNumber(artist.upvotes) }}
-                      </Button>
-                      
-                      <Button 
-                        variant="outline" 
-                        size="sm" 
-                        class="rounded-full px-2 py-1 h-auto flex items-center gap-1 text-xs border bg-white/10 border-gray-500 hover:text-red-400 text-white hover:bg-red-900/30 hover:border-red-400"
-                        :class="{ 'bg-red-900/50 border-red-400 text-red-400': userVotes[artist.id] === 'down' }"
-                        @click.prevent="handleDownvote(artist.id, genreIndex, artistIndex)"
-                      >
-                        {{ formatNumber(artist.downvotes) }} <ThumbsDown class="size-3" />
                       </Button>
                     </div>
                   </div>
