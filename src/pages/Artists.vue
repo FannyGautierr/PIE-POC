@@ -130,11 +130,6 @@ const formatNumber = (num: number): string => {
   return num.toString();
 };
 
-// Calculate vote ratio for progress bar
-const getVoteRatio = (upvotes: number): number => {
-  return Math.min(upvotes / 100 * 10, 100); // Échelle relative basée sur les upvotes
-};
-
 // User's votes (in a real app, this would be stored in a database)
 const userVotes = ref<Record<number, 'up' | null>>({});
 
