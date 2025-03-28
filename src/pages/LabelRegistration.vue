@@ -39,7 +39,7 @@ const budgetRanges = [
   '50 000€-100 000€', 'Plus de 100 000€'
 ];
 
-// Soumission du formulaire
+
 const isSubmitting = ref(false);
 const isSuccess = ref(false);
 const errorMessage = ref('');

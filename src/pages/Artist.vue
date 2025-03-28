@@ -89,11 +89,6 @@ const formatNumber = (num: number): string => {
   }
   return num.toString();
 };
-
-// Check if a social media link exists
-const hasSocialLink = (platform: string): boolean => {
-  return artist.value?.socials && artist.value.socials[platform] && artist.value.socials[platform].length > 0;
-};
 </script>
 
 <template>
