@@ -111,23 +111,23 @@ const matchedArtists = ref([
   },
   {
     id: 6,
-    name: 'Tsew The Kid',
-    genre: 'Rap/RnB',
-    followers: '480K',
-    experience: 'Artiste émergent',
-    region: 'Lyon',
-    matchScore: 89,
-    communityScore: 86,
-    communityVotes: 1312,
-    image: 'https://images.unsplash.com/photo-1516280440614-37939bbacd81?q=80&w=100&h=100&auto=format&fit=crop',
-    growth: '+25%',
-    engagement: 'Élevé',
-    recentRelease: 'Ayna',
-    releaseDate: '2025-01-15',
-    weeklyListens: 780000,
-    weeklyChange: 22.3,
-    socialLinks: ['instagram', 'spotify', 'tiktok', 'youtube'],
-    isNew: true,
+    name: 'Alpha Wann',
+    genre: 'Rap',
+    followers: '640K',
+    experience: 'Artiste établi',
+    region: 'Paris',
+    matchScore: 92,
+    communityScore: 90,
+    communityVotes: 2876,
+    image: 'https://images.genius.com/9eceb53405edce9e22267af62f7b2548.427x427x1.png',
+    growth: '+14%',
+    engagement: 'Très Élevé',
+    recentRelease: 'Don Dada Mixtape Vol.1',
+    releaseDate: '2024-12-04',
+    weeklyListens: 925000,
+    weeklyChange: 16.8,
+    socialLinks: ['instagram', 'spotify', 'youtube', 'twitter'],
+    isNew: false,
     isSaved: false
   },
   {
@@ -386,7 +386,7 @@ const toggleSaveArtist = (artist: Artist) => {
           class="py-4 px-1 border-b-2 font-medium text-sm whitespace-nowrap" 
           :class="activeTab === 'all' ? 'border-blue-500 text-blue-600' : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'"
         >
-          Tous les matches
+          Tous les matchs
         </button>
         <button 
           @click="activeTab = 'saved'" 
@@ -599,7 +599,7 @@ const toggleSaveArtist = (artist: Artist) => {
         
         <div class="bg-white rounded-lg border border-gray-200 p-6 shadow-sm">
           <h2 class="text-xl font-semibold mb-4">Nouvelles découvertes</h2>
-          <p class="text-gray-600 mb-4">Ces artistes sont de nouveaux matches qui correspondent à vos critères</p>
+          <p class="text-gray-600 mb-4">Ces artistes sont de nouveaux matchs qui correspondent à vos critères</p>
           
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <div 
@@ -866,7 +866,7 @@ const toggleSaveArtist = (artist: Artist) => {
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             <h3 class="text-lg font-medium text-gray-700 mb-2">Aucun artiste ne correspond à vos filtres</h3>
-            <p class="text-gray-500 mb-4">Essayez de ajuster vos filtres ou vérifiez plus tard pour de nouveaux matches.</p>
+            <p class="text-gray-500 mb-4">Essayez de ajuster vos filtres ou vérifiez plus tard pour de nouveaux matchs</p>
             <button 
               @click="resetFilters"
               class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
