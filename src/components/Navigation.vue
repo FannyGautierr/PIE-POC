@@ -28,7 +28,7 @@ const navigateTo = (path: string) => {
       <div class="mr-4 flex">
         <router-link to="/" class="flex items-center space-x-2 mr-6" @click="closeSheet">
           <Music class="h-6 w-6" />
-          <span class="font-bold">MusicPlatform</span>
+          <span class="font-bold">Soundrise</span>
         </router-link>
         <nav class="hidden md:flex items-center space-x-6 text-sm font-medium">
           <router-link 
